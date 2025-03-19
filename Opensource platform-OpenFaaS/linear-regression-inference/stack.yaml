@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://172.187.201.167:8080
+functions:
+  linear-regression-inference:
+    lang: python3-flask
+    handler: ./linear-regression-inference
+    image: egnes/lr-inference:latest
+

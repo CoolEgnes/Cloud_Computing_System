@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://172.187.201.167:8080
+functions:
+  ml-zhd:
+    lang: python3-flask
+    handler: ./ml-zhd
+    image: egnes/ml-zhd:latest
+

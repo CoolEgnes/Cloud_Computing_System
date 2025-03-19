@@ -1,0 +1,14 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://172.187.201.167:8080
+functions:
+  resnet50:
+    lang: python3-flask
+    handler: ./resnet50
+    image: egnes/resnet50:latest
+    environment:
+      read_timeout: "5m"  # Increase read timeout to 2 minutes
+      write_timeout: "5m"  # Increase write timeout to 2 minutes
+      exec_timeout: "5m"
+
