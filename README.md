@@ -9,6 +9,6 @@ The third one is resnet-vscode, this folder stores the code for training a resne
 The open-source platform is OpenFaaS, whose codes are stored in the folder, "Opensource platform-OpenFaaS".  
 Sub-folders in this folder follow a similar pattern in the "Commercial platform-Azure".
 The project successfully verified that:
-1.For simple ML models like linear regression, training on FaaS is much more efficient than on local machine. This is consistent with the arguments from the literature review.
-2.When inferencing on the serverless computing platforms, with the increasement of invocations, in this work represented by the number of threads, the throughput and the average response time grew linearly on both platforms. The CPU utilisation followed a roughly similar pattern, while on OpenFaaS a wider range was observed. The observation is consistent with the statements in the literature review.
+1.For simple ML models like linear regression, training on FaaS is much more efficient than on local machine. This is consistent with the arguments from the literature review.  
+2.When inferencing on the serverless computing platforms, with the increasement of invocations, in this work represented by the number of threads, the throughput and the average response time grew linearly on both platforms. The CPU utilisation followed a roughly similar pattern, while on OpenFaaS a wider range was observed. The observation is consistent with the statements in the literature review.  
 3.By comparing the performance of two platforms, it is obvious that Azure functions are more efficient than OpenFaaS functions. This is consistent with the statements in the literature review.
